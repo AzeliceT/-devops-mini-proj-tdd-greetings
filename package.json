@@ -1,0 +1,22 @@
+{
+  "name": "devops-mini-proj-tdrr-greetings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzeliceT/-devops-mini-proj-tdd-greetings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AzeliceT/-devops-mini-proj-tdd-greetings/issues"
+  },
+  "homepage": "https://github.com/AzeliceT/-devops-mini-proj-tdd-greetings#readme",
+  "devDependencies": {
+    "jasmine": "^5.1.0"
+  }
+}
