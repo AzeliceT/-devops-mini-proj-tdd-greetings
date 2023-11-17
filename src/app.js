@@ -6,8 +6,8 @@ export class Main {
         }
 
         if(name.length===2) {
-            return 'Hello, Jill and Jane.'; 
-         }
+            return 'Hello, ' + name[0] + ' and ' + name[1] + '.'; 
+        }
 
         if(this.upperCase(name)){
             return 'HELLO, ' + name + '!';
