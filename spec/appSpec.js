@@ -27,12 +27,21 @@ describe("A suite of tests for the greet function of the main class", function()
         expect(result).toBe(`HELLO, ${name.toUpperCase()}!`);
     });
 
-    it("greet function should return 'Hello, Jill and Jane.' when given  ['Jill', 'Jane']", function(){
+    it("greet function should return 'Hello, Jill and Jane.' when given ['Jill', 'Jane']", function(){
         
         let name = ["Jill", "Jane"];
         let main = new Main();
         let result = main.greet(name);
 
         expect(result).toBe(`Hello, ${name[0]} and ${name[1]}.`);
+    });
+
+    it("greet function should return 'Hello, Amy, Brian and Charlotte.' when given ['Amy', 'Brian', 'Charlotte']", function(){
+        
+        let name = ["Amy", "Brian", "Charlotte"];
+        let main = new Main();
+        let result = main.greet(name);
+
+        expect(result).toBe('Hello, Amy, Brian and Charlotte.');
     });
 });

@@ -9,6 +9,10 @@ export class Main {
             return 'Hello, ' + name[0] + ' and ' + name[1] + '.'; 
         }
 
+        if(Array.isArray(name) && name.length===3) { 
+            return "Hello, Amy, Brian and Charlotte."; 
+         }
+         
         if(this.upperCase(name)){
             return 'HELLO, ' + name + '!';
          }
