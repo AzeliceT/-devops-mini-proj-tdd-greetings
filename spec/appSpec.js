@@ -28,6 +28,7 @@ describe("A suite of tests for the greet function of the main class", function()
     });
 
     it("greet function should return 'Hello, Jill and Jane.' when given  ['Jill', 'Jane']", function(){
+        
         let name = ["Jill", "Jane"];
         let main = new Main();
         let result = main.greet(name);
