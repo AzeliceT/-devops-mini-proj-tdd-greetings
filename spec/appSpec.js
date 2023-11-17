@@ -1,38 +1,33 @@
-import {Main} from '../src/app.js';
+import { Main } from "../src/app.js";
 
-describe("A suite of tests for the greet function of the main class", function(){
+describe("A suite of tests for the greet function of the main class", function () {
+  it("greet function should return 'Hello, Bob.' when given 'Bob'", function () {
+    let name = "Bob";
+    let main = new Main();
+    let result = main.greet(name);
 
-    it("greet function should return 'Hello, Bob.' when given 'Bob'", function(){
+    expect(result).toBe(`Hello, ${name}.`);
+  });
 
-        let name = "Bob";
-        let main = new Main();
-        let result = main.greet(name);
+  it("greet function should return 'Hello, my friend.' when given null, undefined or empty", function () {
+    let main = new Main();
+    let result = main.greet();
 
-        expect(result).toBe(`Hello, ${name}.`);
-    });
+    expect(result).toBe("Hello, my friend.");
+  });
 
-    it("greet function should return 'Hello, my friend.' when given null, undefined or empty", function(){
+  it("greet function should return 'HELLO, JERRY!' when given 'JERRY'", function () {
+    let name = "JERRY";
+    let main = new Main();
+    let result = main.greet(name);
+    expect(result).toBe(`HELLO, ${name.toUpperCase()}!`);
+  });
 
-        let main = new Main();
-        let result = main.greet();
+  it("greet function should return 'Hello, Jill and Jane.' when given  ['Jill', 'Jane']", function () {
+    let name = ["Jill", "Jane"];
+    let main = new Main();
+    let result = main.greet(name);
 
-        expect(result).toBe("Hello, my friend.");
-    });
-    
-    it("greet function should return 'HELLO, JERRY!' when given 'JERRY'", function(){
-
-        let name = "JERRY"
-        let main = new Main();
-        let result = main.greet(name);
-        expect(result).toBe(`HELLO, ${name.toUpperCase()}!`);
-    });
-
-    it("greet function should return 'Hello, Jill and Jane.' when given  ['Jill', 'Jane']", function(){
-        
-        let name = ["Jill", "Jane"];
-        let main = new Main();
-        let result = main.greet(name);
-
-        expect(result).toBe(`Hello, ${name[0]} and ${name[1]}.`);
-    });
+    expect(result).toBe(`Hello, ${name[0]} and ${name[1]}.`);
+  });
 });
