@@ -5,9 +5,9 @@ export class Main {
             return 'Hello, my friend.';
         }
 
-         if(name==='JERRY'){
+        if(this.upperCase(name)){
             return 'HELLO, ' + name + '!';
-        }
+         }
 
      return 'Hello, ' + name + '.';
     }
@@ -15,4 +15,8 @@ export class Main {
     isNullUnedinedOrEmpty(name){
         return name === null || name===undefined || name === ''
     }
+
+    upperCase(name){
+        return name==='JERRY';
+     }
 }
