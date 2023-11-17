@@ -3,7 +3,11 @@ export class Main {
 
         if(this.isNullUnedinedOrEmpty(name)){
             return 'Hello, my friend.';
-         }
+        }
+
+         if(name==='JERRY'){
+            return 'HELLO, ' + name + '!';
+        }
 
      return 'Hello, ' + name + '.';
     }

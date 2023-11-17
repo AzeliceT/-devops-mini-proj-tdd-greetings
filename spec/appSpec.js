@@ -19,4 +19,10 @@ describe("A suite of tests for the greet function of the main class", function()
         expect(result).toBe("Hello, my friend.");
     });
     
+    it("greet function should return 'HELLO, JERRY!' when given 'JERRY'", function(){
+
+        let main = new Main();
+        let result = main.greet("JERRY");
+        expect(result).toBe("HELLO, JERRY!");
+    });
 });
