@@ -31,7 +31,7 @@ export class Main {
      }
 
      lengthEqualsToTwo(name){
-        return name.length===2;
+        return Array.isArray(name) && name.length===2;
      }
 
      lengthSuperiorThanTwo(name) {
