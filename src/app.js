@@ -33,6 +33,6 @@ export class Main {
      }
 
      lengthSuperiorThanTwo(name) {
-        return Array.isArray(name) && name.length === 3;
+        return Array.isArray(name) && name.length >= 3;
      }
 }
