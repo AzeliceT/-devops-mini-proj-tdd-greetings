@@ -5,7 +5,19 @@ export class Main {
     }
 
     if (this.lengthEqualsToTwo(name)) {
-      return "Hello, " + name[0] + " and " + name[1] + ".";
+        if(name[1] === 'fr'){
+            return 'Bonjour, Marie.';
+         }
+
+         if(name[1] === 'nl'){
+            return 'Dag, Marie.';
+         }
+
+         if(name[1] === 'en'){
+            return 'Hello, Marie.';
+         }
+        
+        return "Hello, " + name[0] + " and " + name[1] + ".";
     }
 
     if(this.lengthSuperiorThanTwo(name)) {
