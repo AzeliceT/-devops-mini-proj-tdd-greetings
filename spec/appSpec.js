@@ -32,6 +32,6 @@ describe("A suite of tests for the greet function of the main class", function()
         let main = new Main();
         let result = main.greet(name);
 
-        expect(result).toBe("Hello, Jill and Jane.");
+        expect(result).toBe(`Hello, ${name[0]} and ${name[1]}.`);
     });
 });
