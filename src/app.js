@@ -9,7 +9,7 @@ export class Main {
             return 'Hello, ' + name[0] + ' and ' + name[1] + '.'; 
         }
 
-        if(Array.isArray(name) && name.length===3) { 
+        if(this.lengthSuperiorThanTwo(name)) { 
             return 'Hello, ' + name[0] + ', ' + name[1] + ' and ' + name[2] + '.'; 
         }
          
@@ -30,5 +30,9 @@ export class Main {
 
      lengthEqualsToTwo(name){
         return name.length===2;
+     }
+
+     lengthSuperiorThanTwo(name) {
+        return Array.isArray(name) && name.length === 3;
      }
 }
