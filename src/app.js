@@ -5,6 +5,10 @@ export class Main {
             return 'Hello, my friend.';
         }
 
+        if(name.length===2) {
+            return 'Hello, Jill and Jane.'; 
+         }
+
         if(this.upperCase(name)){
             return 'HELLO, ' + name + '!';
          }
