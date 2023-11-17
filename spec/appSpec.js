@@ -23,7 +23,7 @@ describe("A suite of tests for the greet function of the main class", function()
 
         let name = "JERRY"
         let main = new Main();
-        let result = main.greet(name.toUpperCase());
+        let result = main.greet(name);
         expect(result).toBe(`HELLO, ${name.toUpperCase()}!`);
     });
 });

@@ -13,7 +13,7 @@ export class Main {
     }
 
     isNullUnedinedOrEmpty(name){
-        return name === null || name===undefined || name === ''
+        return name === null || name===undefined || name === '';
     }
 
     upperCase(name){
