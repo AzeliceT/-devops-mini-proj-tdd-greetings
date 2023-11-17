@@ -10,7 +10,9 @@ export class Main {
         }
 
         if(this.lengthSuperiorThanTwo(name)) { 
-            return 'Hello, ' + name[0] + ', ' + name[1] + ' and ' + name[2] + '.'; 
+            let toutSaufDernier = name.slice(0, name.length-1).join(', ');
+            let dernier = name.slice(name.length-1);
+            return `Hello, ${toutSaufDernier} and ${dernier}.`; 
         }
          
         if(this.upperCase(name)){
