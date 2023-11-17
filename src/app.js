@@ -5,22 +5,34 @@ export class Main {
     }
 
     if (this.lengthEqualsToTwo(name)) {
-        if(name[1] === 'fr'){
-            return 'Bonjour, Marie.';
-         }
+        if(name[name.length-1] === 'fr'){
+            return 'Bonjour, ' + name[0] + '.';
+        }
 
-         if(name[1] === 'nl'){
-            return 'Dag, Marie.';
-         }
+        if(name[name.length-1] === 'nl'){
+            return 'Dag, ' + name[0] + '.';
+        }
 
-         if(name[1] === 'en'){
-            return 'Hello, Marie.';
-         }
-        
+        if(name[name.length-1] === 'en'){
+            return 'Hello, ' + name[0] + '.';
+        }
+
         return "Hello, " + name[0] + " and " + name[1] + ".";
     }
 
     if(this.lengthSuperiorThanTwo(name)) {
+        if(name[name.length-1] === 'fr'){
+            return 'Bonjour, ' + name[0] + " et " + name[1] + '.';
+         }
+
+         if(name[name.length-1] === 'nl'){
+            return 'Dag, ' + name[0] + " en " + name[1] + '.';
+         }
+
+         if(name[name.length-1] === 'en'){
+            return 'Hello, ' + name[0] + " and " + name[1] + '.';
+         }
+
         const lowerNames = [];
         const upperNames = [];
         let message = "Hello, ";
