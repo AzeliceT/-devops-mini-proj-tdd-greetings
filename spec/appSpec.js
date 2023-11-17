@@ -38,4 +38,15 @@ describe("A suite of tests for the greet function of the main class", function (
 
     expect(result).toBe(`Hello, ${name[0]}, ${name[1]} and ${name[2]}.`);
   });
+
+  it("greet function should return 'Hello, Amy and Charlotte. AND HELLO BRIAN !' when given ['Amy', 'BRIAN', 'Charlotte']", function(){
+    let name = ["Amy", "BRIAN", "Charlotte"];
+
+    let main = new Main();
+    let result = main.greet(name);
+
+    expect(result).toBe("Hello, Amy and Charlotte. AND HELLO BRIAN !");
+  });
+
+
 });

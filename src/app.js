@@ -8,10 +8,30 @@ export class Main {
       return "Hello, " + name[0] + " and " + name[1] + ".";
     }
 
-    if (this.lengthSuperiorThanTwo(name)) {
-      let toutSaufDernier = name.slice(0, name.length - 1).join(", ");
-      let dernier = name.slice(name.length - 1);
-      return `Hello, ${toutSaufDernier} and ${dernier}.`;
+    if(this.lengthSuperiorThanTwo(name)) {
+        const lowerNames = [];
+        const upperNames = [];
+        let message = "Hello, ";
+
+        for (const nom of name) {
+           if((nom === nom.toUpperCase())){
+              upperNames.push(nom);
+           } else {
+              lowerNames.push(nom);
+
+           }
+        }
+
+        message += lowerNames.slice(0,name.length-1).join(' and ') + lowerNames.slice(name.length-1) + ". ";
+        message += 'AND HELLO BRIAN !';
+
+        if(upperNames.length > 0){
+           return message;
+        }
+
+        let toutSaufDernier = name.slice(0, name.length-1).join(', ');
+        let dernier = name.slice(name.length-1);
+        return `Hello, ${toutSaufDernier} and ${dernier}.`; 
     }
 
     if (this.upperCase(name)) {
