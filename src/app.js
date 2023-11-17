@@ -23,7 +23,7 @@ export class Main {
         }
 
         message += lowerNames.slice(0,name.length-1).join(' and ') + lowerNames.slice(name.length-1) + ". ";
-        message += 'AND HELLO BRIAN !';
+        message += 'AND HELLO ' + upperNames[0] + " !";
 
         if(upperNames.length > 0){
            return message;
