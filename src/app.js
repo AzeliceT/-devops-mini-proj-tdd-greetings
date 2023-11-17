@@ -5,7 +5,7 @@ export class Main {
             return 'Hello, my friend.';
         }
 
-        if(name.length===2) {
+        if(this.lengthEqualsToTwo(name)) {
             return 'Hello, ' + name[0] + ' and ' + name[1] + '.'; 
         }
 
@@ -22,5 +22,9 @@ export class Main {
 
     upperCase(name){
         return name===name.toUpperCase();
+     }
+
+     lengthEqualsToTwo(name){
+        return name.length===2;
      }
 }
