@@ -1,5 +1,7 @@
 Names of people in the team who contributed to this project: 
 
+Team 7
+
 Araujo Correia Ana Carolina
 Dahman Kawtar
 Collard Gauthier
