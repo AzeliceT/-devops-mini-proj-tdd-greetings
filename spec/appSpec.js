@@ -18,4 +18,5 @@ describe("A suite of tests for the greet function of the main class", function()
 
         expect(result).toBe("Hello, my friend.");
     });
+    
 });
