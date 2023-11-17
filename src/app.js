@@ -17,6 +17,6 @@ export class Main {
     }
 
     upperCase(name){
-        return name==='JERRY';
+        return name===name.toUpperCase();
      }
 }
