@@ -39,22 +39,23 @@ describe("A suite of tests for the greet function of the main class", function (
     expect(result).toBe(`Hello, ${name[0]}, ${name[1]} and ${name[2]}.`);
   });
 
-  it("greet function should return 'Hello, Amy and Charlotte. AND HELLO BRIAN !' when given ['Amy', 'BRIAN', 'Charlotte']", function(){
+  it("greet function should return 'Hello, Amy and Charlotte. AND HELLO BRIAN !' when given ['Amy', 'BRIAN', 'Charlotte']", function () {
     let name = ["Amy", "BRIAN", "Charlotte"];
 
     let main = new Main();
     let result = main.greet(name);
 
-    expect(result).toBe(`Hello, ${name[0]} and ${name[2]}. AND HELLO ${name[1]} !`);
+    expect(result).toBe(
+      `Hello, ${name[0]} and ${name[2]}. AND HELLO ${name[1]} !`
+    );
   });
-  
-  it("greet function should return 'Bonjour, Marie.' when given ['Marie','fr']", function(){
-    let name = ["Marie","fr"];
+
+  it("greet function should return 'Bonjour, Marie.' when given ['Marie','fr']", function () {
+    let name = ["Marie", "fr"];
 
     let main = new Main();
     let result = main.greet(name);
 
     expect(result).toBe(`Bonjour, ${name[0]}.`);
-});
-
+  });
 });
