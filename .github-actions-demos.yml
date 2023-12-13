@@ -1,31 +1,30 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-
 on:
-    push:
-        branches:
-            - main
-    pull_request:
-        branches: 
-            - main
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: 
+      - main
+
 jobs:
-    Explore-GitHub-Actions:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout repository
-            - uses: actions/checkout@v3
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-            - name: Installation des dépendances
-            - run: npm i
+      - name: Installation des dépendances
+        run: npm i
 
-            - name: Heure de commencement de la pipeline
-            - run: echo "La pipeline a commencé à $date"
+      - name: Heure de commencement de la pipeline
+        run: echo "La pipeline a commencé à $(date)"
 
-            - name: Format code as Prettier
-            - run: npm run prettier
+      - name: Format code as Prettier
+        run: npm run prettier
 
-            - name: Lint code as Lint
-            - run: npm run lint
+      - name: Lint code as Lint
+        run: npm run lint
 
-            - name: Code test ( coverage >=80% )
-            - run: npm run test
+      - name: Code test ( coverage >=80% )
+        run: npm run test
