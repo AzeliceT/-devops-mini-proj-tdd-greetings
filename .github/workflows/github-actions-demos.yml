@@ -16,3 +16,6 @@ jobs:
 
       - name: Installation des dépendances
       - run: npm i
+
+      - name: Heure de commencement de la pipeline
+      - run: echo "La pipeline a commencé à $date"
