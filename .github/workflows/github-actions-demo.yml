@@ -6,3 +6,13 @@ on:
 jobs:
     Explore-GitHub-Actions:
         runs-on: ubuntu-latest
+        steps:
+        
+          - name: Checkout repository
+            uses: actions/checkout@v3
+
+          - name: Install dependencies
+            run: npm i 
+
+            
+  
