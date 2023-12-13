@@ -1,4 +1,4 @@
-Names of people in the team who contributed to this project: 
+Names of people in the team who contributed to this project:
 
 Team 7
 
