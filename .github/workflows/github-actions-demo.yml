@@ -32,5 +32,8 @@ jobs:
           - name: Pipeline end time
             run: echo "The pipeline finished at $(date)"
 
+          - name: Success message
+            run: echo "PIPELINE SUCCESS WITHOUT ERRORS"
+
             
   
