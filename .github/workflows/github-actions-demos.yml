@@ -25,3 +25,6 @@ jobs:
 
       - name: Lint code as Lint
       - run: npm run lint
+
+      - name: Code test ( coverage >=80% )
+      - run: npm run test
