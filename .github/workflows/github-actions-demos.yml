@@ -10,11 +10,11 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v3
 
-            - name: Installation des dépendances
+            - name: Install dependencies
               run: npm i
 
-            - name: Heure de commencement de la pipeline
-              run: echo "La pipeline a commencé à $date"
+            - name: Pipeline start time
+              run: echo "The pipeline started at $date"
 
             - name: Format code as Prettier
               run: npm run prettier
@@ -24,3 +24,5 @@ jobs:
 
             - name: Code test ( coverage >=80% )
               run: npm run test
+
+            
