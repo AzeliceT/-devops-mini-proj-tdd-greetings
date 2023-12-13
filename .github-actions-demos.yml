@@ -3,10 +3,10 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
     push:
         branches:
-            - feat/yml3
+            - main
     pull_request:
         branches: 
-             - main
+            - main
 jobs:
     Explore-GitHub-Actions:
         runs-on: ubuntu-latest
