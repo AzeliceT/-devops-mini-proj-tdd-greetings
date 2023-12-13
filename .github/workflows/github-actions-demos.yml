@@ -19,3 +19,6 @@ jobs:
 
       - name: Heure de commencement de la pipeline
       - run: echo "La pipeline a commencé à $date"
+
+      - name: Format code as Prettier
+      - run: npm run prettier
