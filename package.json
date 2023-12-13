@@ -6,8 +6,8 @@
     "main": "index.js",
     "scripts": {
         "test": "jest --coverage",
-        "prettier": "prettier --check .",
-        "prettier:fix": "prettier --write .",
+        "prettier": "prettier ./src/** --check",
+        "prettier:fix": "prettier --write ./src/**",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
         "code:fix": "prettier --write . && eslint --fix .",
