@@ -12,7 +12,8 @@
         "lint:fix": "eslint --fix .",
         "code:fix": "prettier --write . && eslint --fix .",
         "commit": "cz",
-        "test:watch": "jest --watchAll"
+        "test:watch": "jest --watchAll", 
+        "build": "webpack ./src/app.js -o public/"
     },
     "repository": {
         "type": "git",
@@ -50,5 +51,8 @@
                 "lines": 80
             }
         }
+    },
+    "dependencies": {
+        "webpack-cli": "^5.1.4"
     }
 }
