@@ -13,7 +13,7 @@
         "code:fix": "prettier --write . && eslint --fix .",
         "commit": "cz",
         "test:watch": "jest --watchAll",
-        "build": "webpack ./src/app.js -o public/"
+        "build": "webpack ./src/** -o dist/"
     },
     "repository": {
         "type": "git",
